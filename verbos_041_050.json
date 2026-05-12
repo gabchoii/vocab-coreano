@@ -1,0 +1,786 @@
+[
+  {
+    "id": 41,
+    "verbo_kr": "청소하다",
+    "verbo_br": "limpar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "방",
+        "tipo": "substantivo",
+        "significado_pt": "quarto"
+      },
+      {
+        "hangul": "집",
+        "tipo": "substantivo",
+        "significado_pt": "casa"
+      },
+      {
+        "hangul": "바닥",
+        "tipo": "substantivo",
+        "significado_pt": "chão"
+      },
+      {
+        "hangul": "창문",
+        "tipo": "substantivo",
+        "significado_pt": "janela"
+      },
+      {
+        "hangul": "청소기",
+        "tipo": "substantivo",
+        "significado_pt": "aspirador de pó"
+      },
+      {
+        "hangul": "쓰레기",
+        "tipo": "substantivo",
+        "significado_pt": "lixo"
+      },
+      {
+        "hangul": "먼지",
+        "tipo": "substantivo",
+        "significado_pt": "poeira"
+      },
+      {
+        "hangul": "깨끗한",
+        "tipo": "adjetivo",
+        "significado_pt": "limpo"
+      },
+      {
+        "hangul": "더러운",
+        "tipo": "adjetivo",
+        "significado_pt": "sujo"
+      },
+      {
+        "hangul": "반짝이는",
+        "tipo": "adjetivo",
+        "significado_pt": "brilhante"
+      }
+    ],
+    "temas": [
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "오늘 방을 청소했어요.",
+        "traducao_pt": "Hoje limpei o quarto."
+      },
+      {
+        "hangul": "청소기로 바닥을 청소하고 있어요.",
+        "traducao_pt": "Estou limpando o chão com o aspirador."
+      },
+      {
+        "hangul": "창문을 깨끗하게 청소했어요.",
+        "traducao_pt": "Limpei bem a janela."
+      },
+      {
+        "hangul": "주말마다 집을 청소해요.",
+        "traducao_pt": "Limpo a casa todos os finais de semana."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "verbo_kr": "요리하다",
+    "verbo_br": "cozinhar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "부엌",
+        "tipo": "substantivo",
+        "significado_pt": "cozinha"
+      },
+      {
+        "hangul": "음식",
+        "tipo": "substantivo",
+        "significado_pt": "comida"
+      },
+      {
+        "hangul": "칼",
+        "tipo": "substantivo",
+        "significado_pt": "faca"
+      },
+      {
+        "hangul": "냄비",
+        "tipo": "substantivo",
+        "significado_pt": "panela"
+      },
+      {
+        "hangul": "재료",
+        "tipo": "substantivo",
+        "significado_pt": "ingredientes"
+      },
+      {
+        "hangul": "김치찌개",
+        "tipo": "substantivo",
+        "significado_pt": "kimchi jjigae"
+      },
+      {
+        "hangul": "라면",
+        "tipo": "substantivo",
+        "significado_pt": "ramyeon"
+      },
+      {
+        "hangul": "맛있는",
+        "tipo": "adjetivo",
+        "significado_pt": "delicioso"
+      },
+      {
+        "hangul": "매운",
+        "tipo": "adjetivo",
+        "significado_pt": "apimentado"
+      },
+      {
+        "hangul": "따뜻한",
+        "tipo": "adjetivo",
+        "significado_pt": "quente / acolhedor"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "저녁으로 라면을 요리했어요.",
+        "traducao_pt": "Cozinhei ramyeon para o jantar."
+      },
+      {
+        "hangul": "어머니와 같이 요리하고 있어요.",
+        "traducao_pt": "Estou cozinhando junto com minha mãe."
+      },
+      {
+        "hangul": "부엌에서 요리하는 걸 좋아해요.",
+        "traducao_pt": "Gosto de cozinhar na cozinha."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "verbo_kr": "씻다",
+    "verbo_br": "lavar-se",
+    "palavras_relacionadas": [
+      {
+        "hangul": "손",
+        "tipo": "substantivo",
+        "significado_pt": "mão"
+      },
+      {
+        "hangul": "얼굴",
+        "tipo": "substantivo",
+        "significado_pt": "rosto"
+      },
+      {
+        "hangul": "머리",
+        "tipo": "substantivo",
+        "significado_pt": "cabelo"
+      },
+      {
+        "hangul": "샤워",
+        "tipo": "substantivo",
+        "significado_pt": "banho / chuveiro"
+      },
+      {
+        "hangul": "비누",
+        "tipo": "substantivo",
+        "significado_pt": "sabão"
+      },
+      {
+        "hangul": "수건",
+        "tipo": "substantivo",
+        "significado_pt": "toalha"
+      },
+      {
+        "hangul": "욕실",
+        "tipo": "substantivo",
+        "significado_pt": "banheiro"
+      },
+      {
+        "hangul": "깨끗한",
+        "tipo": "adjetivo",
+        "significado_pt": "limpo"
+      },
+      {
+        "hangul": "따뜻한",
+        "tipo": "adjetivo",
+        "significado_pt": "morno / quente"
+      },
+      {
+        "hangul": "젖은",
+        "tipo": "adjetivo",
+        "significado_pt": "molhado"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Hospital"
+    ],
+    "exemplos": [
+      {
+        "hangul": "손을 자주 씻으세요.",
+        "traducao_pt": "Lave as mãos com frequência."
+      },
+      {
+        "hangul": "아침에 얼굴을 씻었어요.",
+        "traducao_pt": "Lavei o rosto de manhã."
+      },
+      {
+        "hangul": "샤워하면서 머리를 씻었어요.",
+        "traducao_pt": "Lavei o cabelo durante o banho."
+      },
+      {
+        "hangul": "깨끗하게 씻고 나왔어요.",
+        "traducao_pt": "Saí depois de me lavar bem."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "verbo_kr": "입다",
+    "verbo_br": "vestir",
+    "palavras_relacionadas": [
+      {
+        "hangul": "옷",
+        "tipo": "substantivo",
+        "significado_pt": "roupa"
+      },
+      {
+        "hangul": "셔츠",
+        "tipo": "substantivo",
+        "significado_pt": "camisa"
+      },
+      {
+        "hangul": "바지",
+        "tipo": "substantivo",
+        "significado_pt": "calça"
+      },
+      {
+        "hangul": "치마",
+        "tipo": "substantivo",
+        "significado_pt": "saia"
+      },
+      {
+        "hangul": "코트",
+        "tipo": "substantivo",
+        "significado_pt": "casaco"
+      },
+      {
+        "hangul": "교복",
+        "tipo": "substantivo",
+        "significado_pt": "uniforme escolar"
+      },
+      {
+        "hangul": "패션",
+        "tipo": "substantivo",
+        "significado_pt": "moda"
+      },
+      {
+        "hangul": "예쁜",
+        "tipo": "adjetivo",
+        "significado_pt": "bonito"
+      },
+      {
+        "hangul": "편안한",
+        "tipo": "adjetivo",
+        "significado_pt": "confortável"
+      },
+      {
+        "hangul": "따뜻한",
+        "tipo": "adjetivo",
+        "significado_pt": "quente"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Escola",
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "오늘 새 옷을 입었어요.",
+        "traducao_pt": "Hoje vesti roupas novas."
+      },
+      {
+        "hangul": "겨울에는 코트를 입어요.",
+        "traducao_pt": "No inverno uso casaco."
+      },
+      {
+        "hangul": "학생들이 교복을 입고 있어요.",
+        "traducao_pt": "Os estudantes estão usando uniforme."
+      },
+      {
+        "hangul": "편안한 바지를 입고 싶어요.",
+        "traducao_pt": "Quero vestir uma calça confortável."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "verbo_kr": "벗다",
+    "verbo_br": "tirar a roupa",
+    "palavras_relacionadas": [
+      {
+        "hangul": "옷",
+        "tipo": "substantivo",
+        "significado_pt": "roupa"
+      },
+      {
+        "hangul": "신발",
+        "tipo": "substantivo",
+        "significado_pt": "sapato"
+      },
+      {
+        "hangul": "코트",
+        "tipo": "substantivo",
+        "significado_pt": "casaco"
+      },
+      {
+        "hangul": "모자",
+        "tipo": "substantivo",
+        "significado_pt": "chapéu / boné"
+      },
+      {
+        "hangul": "양말",
+        "tipo": "substantivo",
+        "significado_pt": "meia"
+      },
+      {
+        "hangul": "방",
+        "tipo": "substantivo",
+        "significado_pt": "quarto"
+      },
+      {
+        "hangul": "현관",
+        "tipo": "substantivo",
+        "significado_pt": "entrada da casa"
+      },
+      {
+        "hangul": "더운",
+        "tipo": "adjetivo",
+        "significado_pt": "quente"
+      },
+      {
+        "hangul": "편안한",
+        "tipo": "adjetivo",
+        "significado_pt": "confortável"
+      },
+      {
+        "hangul": "젖은",
+        "tipo": "adjetivo",
+        "significado_pt": "molhado"
+      }
+    ],
+    "temas": [
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "집에 와서 신발을 벗었어요.",
+        "traducao_pt": "Cheguei em casa e tirei os sapatos."
+      },
+      {
+        "hangul": "더워서 코트를 벗었어요.",
+        "traducao_pt": "Tirei o casaco porque estava calor."
+      },
+      {
+        "hangul": "방에서 편하게 옷을 벗었어요.",
+        "traducao_pt": "Tirei a roupa confortavelmente no quarto."
+      },
+      {
+        "hangul": "젖은 양말을 빨리 벗으세요.",
+        "traducao_pt": "Tire rapidamente as meias molhadas."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "verbo_kr": "노래하다",
+    "verbo_br": "cantar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "노래",
+        "tipo": "substantivo",
+        "significado_pt": "música / canção"
+      },
+      {
+        "hangul": "음악",
+        "tipo": "substantivo",
+        "significado_pt": "música"
+      },
+      {
+        "hangul": "마이크",
+        "tipo": "substantivo",
+        "significado_pt": "microfone"
+      },
+      {
+        "hangul": "무대",
+        "tipo": "substantivo",
+        "significado_pt": "palco"
+      },
+      {
+        "hangul": "콘서트",
+        "tipo": "substantivo",
+        "significado_pt": "concerto"
+      },
+      {
+        "hangul": "가수",
+        "tipo": "substantivo",
+        "significado_pt": "cantor"
+      },
+      {
+        "hangul": "노래방",
+        "tipo": "substantivo",
+        "significado_pt": "karaokê"
+      },
+      {
+        "hangul": "유명한",
+        "tipo": "adjetivo",
+        "significado_pt": "famoso"
+      },
+      {
+        "hangul": "신나는",
+        "tipo": "adjetivo",
+        "significado_pt": "animado"
+      },
+      {
+        "hangul": "감미로운",
+        "tipo": "adjetivo",
+        "significado_pt": "suave / doce"
+      }
+    ],
+    "temas": [
+      "K-pop & K-drama",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "노래방에서 노래했어요.",
+        "traducao_pt": "Cantei no karaokê."
+      },
+      {
+        "hangul": "좋아하는 노래를 부르고 있어요.",
+        "traducao_pt": "Estou cantando minha música favorita."
+      },
+      {
+        "hangul": "무대에서 노래하고 싶어요.",
+        "traducao_pt": "Quero cantar no palco."
+      },
+      {
+        "hangul": "가수가 감미롭게 노래했어요.",
+        "traducao_pt": "O cantor cantou suavemente."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "verbo_kr": "춤추다",
+    "verbo_br": "dançar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "춤",
+        "tipo": "substantivo",
+        "significado_pt": "dança"
+      },
+      {
+        "hangul": "음악",
+        "tipo": "substantivo",
+        "significado_pt": "música"
+      },
+      {
+        "hangul": "무대",
+        "tipo": "substantivo",
+        "significado_pt": "palco"
+      },
+      {
+        "hangul": "아이돌",
+        "tipo": "substantivo",
+        "significado_pt": "idol"
+      },
+      {
+        "hangul": "연습",
+        "tipo": "substantivo",
+        "significado_pt": "treino"
+      },
+      {
+        "hangul": "공연",
+        "tipo": "substantivo",
+        "significado_pt": "performance"
+      },
+      {
+        "hangul": "동작",
+        "tipo": "substantivo",
+        "significado_pt": "movimento"
+      },
+      {
+        "hangul": "멋있는",
+        "tipo": "adjetivo",
+        "significado_pt": "legal / estiloso"
+      },
+      {
+        "hangul": "빠른",
+        "tipo": "adjetivo",
+        "significado_pt": "rápido"
+      },
+      {
+        "hangul": "신나는",
+        "tipo": "adjetivo",
+        "significado_pt": "animado"
+      }
+    ],
+    "temas": [
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "친구와 같이 춤췄어요.",
+        "traducao_pt": "Dancei junto com meu amigo."
+      },
+      {
+        "hangul": "아이돌처럼 춤추고 싶어요.",
+        "traducao_pt": "Quero dançar como um idol."
+      },
+      {
+        "hangul": "신나는 음악에 맞춰 춤췄어요.",
+        "traducao_pt": "Dancei ao som de uma música animada."
+      },
+      {
+        "hangul": "매일 춤 연습을 해요.",
+        "traducao_pt": "Pratico dança todos os dias."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "verbo_kr": "여행하다",
+    "verbo_br": "viajar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "비행기",
+        "tipo": "substantivo",
+        "significado_pt": "avião"
+      },
+      {
+        "hangul": "공항",
+        "tipo": "substantivo",
+        "significado_pt": "aeroporto"
+      },
+      {
+        "hangul": "호텔",
+        "tipo": "substantivo",
+        "significado_pt": "hotel"
+      },
+      {
+        "hangul": "여권",
+        "tipo": "substantivo",
+        "significado_pt": "passaporte"
+      },
+      {
+        "hangul": "관광지",
+        "tipo": "substantivo",
+        "significado_pt": "ponto turístico"
+      },
+      {
+        "hangul": "지도",
+        "tipo": "substantivo",
+        "significado_pt": "mapa"
+      },
+      {
+        "hangul": "짐",
+        "tipo": "substantivo",
+        "significado_pt": "bagagem"
+      },
+      {
+        "hangul": "즐거운",
+        "tipo": "adjetivo",
+        "significado_pt": "divertido"
+      },
+      {
+        "hangul": "새로운",
+        "tipo": "adjetivo",
+        "significado_pt": "novo"
+      },
+      {
+        "hangul": "유명한",
+        "tipo": "adjetivo",
+        "significado_pt": "famoso"
+      }
+    ],
+    "temas": [
+      "Viagem",
+      "Aeroporto"
+    ],
+    "exemplos": [
+      {
+        "hangul": "한국으로 여행하고 싶어요.",
+        "traducao_pt": "Quero viajar para a Coreia."
+      },
+      {
+        "hangul": "친구와 같이 여행했어요.",
+        "traducao_pt": "Viajei junto com meu amigo."
+      },
+      {
+        "hangul": "공항에서 짐을 찾았어요.",
+        "traducao_pt": "Peguei a bagagem no aeroporto."
+      },
+      {
+        "hangul": "유명한 관광지를 여행할 거예요.",
+        "traducao_pt": "Vou visitar pontos turísticos famosos."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "verbo_kr": "전화하다",
+    "verbo_br": "telefonar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "휴대폰",
+        "tipo": "substantivo",
+        "significado_pt": "celular"
+      },
+      {
+        "hangul": "전화",
+        "tipo": "substantivo",
+        "significado_pt": "ligação"
+      },
+      {
+        "hangul": "친구",
+        "tipo": "substantivo",
+        "significado_pt": "amigo"
+      },
+      {
+        "hangul": "가족",
+        "tipo": "substantivo",
+        "significado_pt": "família"
+      },
+      {
+        "hangul": "번호",
+        "tipo": "substantivo",
+        "significado_pt": "número"
+      },
+      {
+        "hangul": "통화",
+        "tipo": "substantivo",
+        "significado_pt": "chamada"
+      },
+      {
+        "hangul": "메시지",
+        "tipo": "substantivo",
+        "significado_pt": "mensagem"
+      },
+      {
+        "hangul": "중요한",
+        "tipo": "adjetivo",
+        "significado_pt": "importante"
+      },
+      {
+        "hangul": "급한",
+        "tipo": "adjetivo",
+        "significado_pt": "urgente"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Viagem"
+    ],
+    "exemplos": [
+      {
+        "hangul": "어머니에게 전화했어요.",
+        "traducao_pt": "Telefonei para minha mãe."
+      },
+      {
+        "hangul": "친구와 오래 통화했어요.",
+        "traducao_pt": "Conversei por telefone por muito tempo com meu amigo."
+      },
+      {
+        "hangul": "급한 일이 있어서 전화했어요.",
+        "traducao_pt": "Liguei porque havia algo urgente."
+      },
+      {
+        "hangul": "휴대폰 번호를 알려 주세요.",
+        "traducao_pt": "Por favor, me informe o número do celular."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "verbo_kr": "질문하다",
+    "verbo_br": "perguntar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "질문",
+        "tipo": "substantivo",
+        "significado_pt": "pergunta"
+      },
+      {
+        "hangul": "대답",
+        "tipo": "substantivo",
+        "significado_pt": "resposta"
+      },
+      {
+        "hangul": "선생님",
+        "tipo": "substantivo",
+        "significado_pt": "professor"
+      },
+      {
+        "hangul": "학생",
+        "tipo": "substantivo",
+        "significado_pt": "estudante"
+      },
+      {
+        "hangul": "수업",
+        "tipo": "substantivo",
+        "significado_pt": "aula"
+      },
+      {
+        "hangul": "의미",
+        "tipo": "substantivo",
+        "significado_pt": "significado"
+      },
+      {
+        "hangul": "문제",
+        "tipo": "substantivo",
+        "significado_pt": "problema / questão"
+      },
+      {
+        "hangul": "어려운",
+        "tipo": "adjetivo",
+        "significado_pt": "difícil"
+      },
+      {
+        "hangul": "친절한",
+        "tipo": "adjetivo",
+        "significado_pt": "gentil"
+      },
+      {
+        "hangul": "궁금한",
+        "tipo": "adjetivo",
+        "significado_pt": "curioso"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "선생님께 질문했어요.",
+        "traducao_pt": "Fiz uma pergunta ao professor."
+      },
+      {
+        "hangul": "궁금한 것을 질문하세요.",
+        "traducao_pt": "Pergunte o que tiver curiosidade."
+      },
+      {
+        "hangul": "학생들이 많이 질문했어요.",
+        "traducao_pt": "Os estudantes fizeram muitas perguntas."
+      },
+      {
+        "hangul": "어려운 문제를 질문하고 있어요.",
+        "traducao_pt": "Estou perguntando sobre uma questão difícil."
+      }
+    ]
+  }
+]
