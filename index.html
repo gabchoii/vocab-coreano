@@ -139,6 +139,10 @@ nav{background:var(--navy);display:flex;align-items:center;justify-content:space
 .history-meta{font-size:13px;color:var(--ink3);font-weight:600}
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(60px);background:var(--navy);color:white;padding:10px 24px;border-radius:24px;font-size:14px;font-weight:700;opacity:0;transition:all 0.3s ease;pointer-events:none;z-index:999;box-shadow:var(--shadow)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.streak-widget{position:fixed;bottom:1.25rem;right:1.25rem;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:150;pointer-events:none}
+.streak-canvas{width:140px;height:140px;display:block}
+.streak-badge{background:var(--navy);color:rgba(255,255,255,0.85);font-size:11px;font-weight:700;padding:7px 14px;border-radius:20px;text-align:center;box-shadow:0 2px 12px rgba(26,58,107,0.25);white-space:nowrap;line-height:1.5}
+.streak-badge strong{color:var(--pink);font-size:14px}
 
 /* ── MOBILE ── */
 @media(max-width:600px){
@@ -275,6 +279,10 @@ nav{background:var(--navy);display:flex;align-items:center;justify-content:space
 </div>
 
 <div class="toast" id="toast"></div>
+<div class="streak-widget">
+  <canvas class="streak-canvas" id="streak-canvas"></canvas>
+  <div class="streak-badge">estudando vocabulário há <strong id="streak-days">—</strong> dias</div>
+</div>
 <script>
 
 let currentWords = null;
@@ -514,6 +522,33 @@ function clearHistory(){
   localStorage.removeItem('korean_history'); renderHistory(); toast('Histórico limpo.');
 }
 
+// ── STREAK ──
+function getStreakCount() {
+  var h = getHistory();
+  if (!h.length) return 1;
+  var days = new Set(h.map(function(e){ return e.date.substring(0,10); }));
+  return Math.max(1, days.size);
+}
+function initStreak() {
+  document.getElementById('streak-days').textContent = getStreakCount();
+  var img = new Image();
+  img.onload = function() {
+    var canvas = document.getElementById('streak-canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
+    var d = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    var px = d.data;
+    for (var i = 0; i < px.length; i += 4) {
+      var r = px[i], g = px[i+1], b = px[i+2];
+      if (g > 80 && g > r * 1.3 && g > b * 1.3) px[i+3] = 0;
+    }
+    ctx.putImageData(d, 0, 0);
+  };
+  img.src = 'dogs.png';
+}
+
 // ── INIT ──
 document.getElementById('home-date').innerHTML = '📅 ' + fmtDate(new Date());
 document.getElementById('next-update').textContent = getNextUpdate();
@@ -524,6 +559,7 @@ if (cached) {
 } else {
   generateWords();
 }
+initStreak();
 
 
 
