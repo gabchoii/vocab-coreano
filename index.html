@@ -623,8 +623,35 @@ function clearHistory(){
 function getStreakCount() {
   var h = getHistory();
   if (!h.length) return 1;
-  var days = new Set(h.map(function(e){ return e.date.substring(0,10); }));
-  return Math.max(1, days.size);
+  var days = Array.from(new Set(h.map(function(e){ return e.date.substring(0,10); }))).sort().reverse();
+  var today = new Date();
+  today.setHours(0,0,0,0);
+  var streak = 0;
+  var check = new Date(today);
+  for (var i = 0; i < days.length; i++) {
+    var d = new Date(days[i] + 'T00:00:00');
+    if (d.getTime() === check.getTime()) {
+      streak++;
+      check.setDate(check.getDate() - 1);
+    } else if (d < check) {
+      break;
+    }
+  }
+  // se não entrou hoje mas entrou ontem, streak continua válido
+  if (streak === 0) {
+    check = new Date(today);
+    check.setDate(check.getDate() - 1);
+    for (var i = 0; i < days.length; i++) {
+      var d = new Date(days[i] + 'T00:00:00');
+      if (d.getTime() === check.getTime()) {
+        streak++;
+        check.setDate(check.getDate() - 1);
+      } else if (d < check) {
+        break;
+      }
+    }
+  }
+  return Math.max(1, streak);
 }
 function initStreak() {
   document.getElementById('streak-days').textContent = getStreakCount();
