@@ -371,12 +371,18 @@ function getNextUpdate() {
   var utc = now.getTime() + now.getTimezoneOffset() * 60000;
   var brt = new Date(utc - 3 * 3600000);
   var next = new Date(brt);
-  next.setHours(7, 0, 0, 0);
+  next.setHours(0, 1, 0, 0);
   if (brt >= next) next.setDate(next.getDate() + 1);
   var diff = next - brt;
   var h = Math.floor(diff / 3600000);
   var m = Math.floor((diff % 3600000) / 60000);
   return 'Atualiza em ' + h + 'h ' + m + 'min';
+}
+function startCountdown() {
+  var el = document.getElementById('next-update');
+  if (!el) return;
+  el.textContent = getNextUpdate();
+  setInterval(function() { el.textContent = getNextUpdate(); }, 60000);
 }
 
 // ── LANG ──
@@ -479,7 +485,6 @@ function saveToHistory(entry){
 // ── RENDER WORDS ──
 function renderWords(verbs) {
   document.getElementById('home-date').innerHTML = '📅 ' + fmtDate(new Date());
-  document.getElementById('next-update').textContent = getNextUpdate();
   var isKo = currentLang === 'ko';
   var html = '<div class="verbs-list">';
   verbs.forEach(function(v, i) {
@@ -633,7 +638,7 @@ function initStreak() {
 
 // ── INIT ──
 document.getElementById('home-date').innerHTML = '📅 ' + fmtDate(new Date());
-document.getElementById('next-update').textContent = getNextUpdate();
+startCountdown();
 var cached = loadCache();
 if (cached) {
   currentWords = cached;
