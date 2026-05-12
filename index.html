@@ -243,11 +243,11 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
     </button>
   </div>
   <div class="nav-right" id="nav-right">
-    <div class="nav-subtitle">Todos os dias, dois verbos e palavras relacionadas</div>
+    <div class="nav-subtitle" id="nav-desc">Todos os dias, dois verbos e palavras relacionadas</div>
     <div class="nav-tabs">
-      <button class="nav-tab active" onclick="showPage('home')">Hoje</button>
-      <button class="nav-tab" onclick="showPage('quiz')">Quiz</button>
-      <button class="nav-tab" onclick="showPage('history')">Histórico</button>
+      <button class="nav-tab active" id="tab-home" onclick="showPage('home')">Hoje</button>
+      <button class="nav-tab" id="tab-quiz" onclick="showPage('quiz')">Quiz</button>
+      <button class="nav-tab" id="tab-history" onclick="showPage('history')">Histórico</button>
     </div>
     <div class="nav-lang">
       <button class="lang-btn active" id="lang-pt" data-lang="pt" onclick="setLang('pt')">PT/BR</button>
@@ -278,8 +278,8 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
 <div id="page-quiz" class="page">
   <div class="container">
     <div class="page-header">
-      <h1>Quiz de <em>vocabulário</em></h1>
-      <p>Teste o que você estudou hoje.</p>
+      <h1 id="quiz-page-title">Quiz de <em>vocabulário</em></h1>
+      <p id="quiz-page-sub">Teste o que você estudou hoje.</p>
     </div>
     <div id="quiz-content">
       <div class="quiz-setup">
@@ -287,9 +287,9 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
           <circle cx="32" cy="32" r="26" stroke="#1a3a6b" stroke-width="2"/>
           <text x="32" y="42" text-anchor="middle" font-family="'Nunito',sans-serif" font-size="30" font-weight="800" fill="#1a3a6b">?</text>
         </svg>
-        <h2>Pronto para testar?</h2>
-        <p>Gere o vocabulário do dia primeiro, depois volte aqui para o quiz.</p>
-        <button class="btn-primary" onclick="startQuiz()">Iniciar quiz →</button>
+        <h2 id="quiz-ready-title">Pronto para testar?</h2>
+        <p id="quiz-ready-sub">Gere o vocabulário do dia primeiro, depois volte aqui para o quiz.</p>
+        <button class="btn-primary" onclick="startQuiz()" id="quiz-start-btn">Iniciar quiz →</button>
       </div>
     </div>
   </div>
@@ -298,8 +298,8 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
 <div id="page-history" class="page">
   <div class="container">
     <div class="page-header">
-      <h1>Histórico de <em>estudos</em></h1>
-      <p>Todos os verbos que você já estudou.</p>
+      <h1 id="history-page-title">Histórico de <em>estudos</em></h1>
+      <p id="history-page-sub">Todos os verbos que você já estudou.</p>
     </div>
     <div id="history-content"></div>
   </div>
@@ -312,9 +312,9 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
     <button class="drawer-close" onclick="closeMobileMenu()">✕</button>
   </div>
   <nav class="drawer-nav">
-    <button class="drawer-item active" data-page="home" onclick="showPage('home')">Hoje</button>
-    <button class="drawer-item" data-page="quiz" onclick="showPage('quiz')">Quiz</button>
-    <button class="drawer-item" data-page="history" onclick="showPage('history')">Histórico</button>
+    <button class="drawer-item active" id="drawer-home" data-page="home" onclick="showPage('home')">Hoje</button>
+    <button class="drawer-item" id="drawer-quiz" data-page="quiz" onclick="showPage('quiz')">Quiz</button>
+    <button class="drawer-item" id="drawer-history" data-page="history" onclick="showPage('history')">Histórico</button>
   </nav>
   <div class="drawer-divider"></div>
   <div style="padding:0 1.5rem 1rem;font-size:11px;color:rgba(255,255,255,0.45);line-height:1.4">Todos os dias, dois verbos e palavras relacionadas</div>
@@ -326,7 +326,7 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
 <div class="toast" id="toast"></div>
 <div class="streak-widget">
   <canvas class="streak-canvas" id="streak-canvas"></canvas>
-  <div class="streak-badge">estudando vocabulário há <strong id="streak-days">—</strong> dias</div>
+  <div class="streak-badge"><span id="streak-pre">estudando vocabulário há </span><strong id="streak-days">—</strong><span id="streak-suf"> dias</span></div>
 </div>
 <script>
 
@@ -403,8 +403,25 @@ function setLang(lang) {
   });
   document.getElementById('logo-kr').style.display = lang === 'pt' ? '' : 'none';
   document.getElementById('logo-br').style.display = lang === 'ko' ? '' : 'none';
-  document.getElementById('nav-title').textContent = lang === 'ko' ? '포어 공부' : '한국어 공부';
-  document.getElementById('nav-subtitle-text').textContent = lang === 'ko' ? 'Estudos de português' : 'Estudos de coreano';
+  var isKo = lang === 'ko';
+  document.getElementById('nav-title').textContent         = isKo ? '포어 공부'                            : '한국어 공부';
+  document.getElementById('nav-subtitle-text').textContent = isKo ? 'Estudos de português'                 : 'Estudos de coreano';
+  document.getElementById('nav-desc').textContent          = isKo ? '매일 동사 두개와 관련 단어'           : 'Todos os dias, dois verbos e palavras relacionadas';
+  document.getElementById('tab-home').textContent          = isKo ? '오늘'                                 : 'Hoje';
+  document.getElementById('tab-quiz').textContent          = isKo ? '퀴즈'                                 : 'Quiz';
+  document.getElementById('tab-history').textContent       = isKo ? '기록'                                 : 'Histórico';
+  document.getElementById('drawer-home').textContent       = isKo ? '오늘'                                 : 'Hoje';
+  document.getElementById('drawer-quiz').textContent       = isKo ? '퀴즈'                                 : 'Quiz';
+  document.getElementById('drawer-history').textContent    = isKo ? '기록'                                 : 'Histórico';
+  document.getElementById('quiz-page-title').innerHTML     = isKo ? '<em>단어</em> 퀴즈'                   : 'Quiz de <em>vocabulário</em>';
+  document.getElementById('quiz-page-sub').textContent     = isKo ? '오늘 공부한 단어를 테스트해보세요.'   : 'Teste o que você estudou hoje.';
+  document.getElementById('quiz-ready-title').textContent  = isKo ? '준비됐나요?'                          : 'Pronto para testar?';
+  document.getElementById('quiz-ready-sub').textContent    = isKo ? '먼저 오늘의 단어를 불러온 후 퀴즈를 시작하세요.' : 'Gere o vocabulário do dia primeiro, depois volte aqui para o quiz.';
+  document.getElementById('quiz-start-btn').textContent    = isKo ? '퀴즈 시작 →'                         : 'Iniciar quiz →';
+  document.getElementById('history-page-title').innerHTML  = isKo ? '<em>공부</em> 기록'                   : 'Histórico de <em>estudos</em>';
+  document.getElementById('history-page-sub').textContent  = isKo ? '공부한 모든 동사'                     : 'Todos os verbos que você já estudou.';
+  document.getElementById('streak-pre').textContent        = isKo ? '단어 공부 '                           : 'estudando vocabulário há ';
+  document.getElementById('streak-suf').textContent        = isKo ? '일째'                                 : ' dias';
   if (currentWords) renderWords(currentWords);
   closeMobileMenu();
 }
@@ -537,7 +554,7 @@ function renderWords(verbs) {
 function startQuiz() {
   if (!currentWords) { toast('Navegue até um tema primeiro!'); showPage('home'); return; }
   quizWords = [];
-  currentWords.forEach(function(v){ v.related.forEach(function(w){ quizWords.push(Object.assign({},w,{verbHangul:v.hangul})); }); });
+  currentWords.forEach(function(v){ v.related.forEach(function(w){ quizWords.push(Object.assign({},w,{verbHangul:v.hangul,verbPt:v.meaning_pt})); }); });
   quizWords = quizWords.sort(function(){ return Math.random()-0.5; }).slice(0, Math.min(10, quizWords.length));
   quizIdx = 0; quizScore = 0;
   renderQuizQuestion();
@@ -553,11 +570,12 @@ function renderQuizQuestion() {
   var pct = Math.round((quizIdx/quizWords.length)*100);
   var qWord    = isKo ? q.meaning_pt : q.hangul;
   var qCorrect = isKo ? q.hangul     : q.meaning_pt;
-  var qLabel   = isKo ? 'Qual é a palavra em coreano?' : 'O que significa esta palavra?';
-  var qHint    = isKo ? 'do verbo ' + q.verbHangul : 'do verbo ' + q.verbHangul;
+  var qLabel     = isKo ? '알맞은 단어를 고르세요' : 'O que significa esta palavra?';
+  var qHint      = isKo ? '동사: ' + q.verbPt : 'do verbo ' + q.verbHangul;
   var qWordStyle = isKo ? 'style="font-family:\'Nunito\',sans-serif;font-size:36px"' : '';
+  var qProgress  = isKo ? (quizIdx+1)+'/'+quizWords.length : (quizIdx+1)+' de '+quizWords.length;
   var html = '<div class="quiz-card-wrap">';
-  html += '<div class="progress-wrap"><div class="progress-bar-track"><div class="progress-bar-fill" style="width:'+pct+'%"></div></div><div class="progress-label">'+(quizIdx+1)+' de '+quizWords.length+'</div></div>';
+  html += '<div class="progress-wrap"><div class="progress-bar-track"><div class="progress-bar-fill" style="width:'+pct+'%"></div></div><div class="progress-label">'+qProgress+'</div></div>';
   html += '<div class="quiz-card"><div class="quiz-question-label">'+qLabel+'</div><div class="quiz-word" '+qWordStyle+'>'+qWord+'</div><div class="quiz-hint">'+qHint+'</div></div>';
   html += '<div class="quiz-options">';
   opts.forEach(function(o){
