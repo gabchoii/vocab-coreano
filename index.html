@@ -291,6 +291,21 @@ let quizWords = [], quizIdx = 0, quizScore = 0, quizAnswered = false;
 
 // ── CACHE KEY ──
 // Resets daily at 07:00 BRT (UTC-3 = UTC+0 10:00)
+function hashStr(str) {
+  var h = 0;
+  for (var i = 0; i < str.length; i++) {
+    h = Math.imul(31, h) + str.charCodeAt(i) | 0;
+  }
+  return Math.abs(h);
+}
+function seededRng(seed) {
+  var s = seed | 0;
+  return function() {
+    s ^= s << 13; s ^= s >> 17; s ^= s << 5;
+    return (s >>> 0) / 4294967296;
+  };
+}
+
 function getDayKey() {
   var now = new Date();
   var utc = now.getTime() + now.getTimezoneOffset() * 60000;
@@ -345,7 +360,8 @@ async function generateWords() {
   try {
     var res = await fetch('verbos_001_010.json');
     var all = await res.json();
-    var shuffled = all.slice().sort(function(){ return Math.random()-0.5; });
+    var rng = seededRng(hashStr(getDayKey()));
+    var shuffled = all.slice().sort(function(){ return rng()-0.5; });
     var picked = shuffled.slice(0, 2);
     var verbs = picked.map(function(v) {
       return {
