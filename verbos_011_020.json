@@ -1,0 +1,790 @@
+[
+  {
+    "id": 11,
+    "verbo_kr": "배우다",
+    "verbo_br": "aprender",
+    "palavras_relacionadas": [
+      {
+        "hangul": "한국어",
+        "tipo": "substantivo",
+        "significado_pt": "língua coreana"
+      },
+      {
+        "hangul": "수업",
+        "tipo": "substantivo",
+        "significado_pt": "aula"
+      },
+      {
+        "hangul": "단어",
+        "tipo": "substantivo",
+        "significado_pt": "palavra / vocabulário"
+      },
+      {
+        "hangul": "문법",
+        "tipo": "substantivo",
+        "significado_pt": "gramática"
+      },
+      {
+        "hangul": "발음",
+        "tipo": "substantivo",
+        "significado_pt": "pronúncia"
+      },
+      {
+        "hangul": "선생님",
+        "tipo": "substantivo",
+        "significado_pt": "professor"
+      },
+      {
+        "hangul": "학생",
+        "tipo": "substantivo",
+        "significado_pt": "estudante"
+      },
+      {
+        "hangul": "새로운",
+        "tipo": "adjetivo",
+        "significado_pt": "novo"
+      },
+      {
+        "hangul": "어려운",
+        "tipo": "adjetivo",
+        "significado_pt": "difícil"
+      },
+      {
+        "hangul": "재미있는",
+        "tipo": "adjetivo",
+        "significado_pt": "interessante / divertido"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia",
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "한국어를 배우고 있어요.",
+        "traducao_pt": "Estou aprendendo coreano."
+      },
+      {
+        "hangul": "새로운 단어를 배웠어요.",
+        "traducao_pt": "Aprendi palavras novas."
+      },
+      {
+        "hangul": "학교에서 문법을 배워요.",
+        "traducao_pt": "Aprendemos gramática na escola."
+      },
+      {
+        "hangul": "춤을 배우고 싶어요.",
+        "traducao_pt": "Quero aprender dança."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "verbo_kr": "가르치다",
+    "verbo_br": "ensinar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "학생",
+        "tipo": "substantivo",
+        "significado_pt": "estudante"
+      },
+      {
+        "hangul": "선생님",
+        "tipo": "substantivo",
+        "significado_pt": "professor"
+      },
+      {
+        "hangul": "수업",
+        "tipo": "substantivo",
+        "significado_pt": "aula"
+      },
+      {
+        "hangul": "한국어",
+        "tipo": "substantivo",
+        "significado_pt": "língua coreana"
+      },
+      {
+        "hangul": "영어",
+        "tipo": "substantivo",
+        "significado_pt": "inglês"
+      },
+      {
+        "hangul": "질문",
+        "tipo": "substantivo",
+        "significado_pt": "pergunta"
+      },
+      {
+        "hangul": "설명",
+        "tipo": "substantivo",
+        "significado_pt": "explicação"
+      },
+      {
+        "hangul": "친절한",
+        "tipo": "adjetivo",
+        "significado_pt": "gentil"
+      },
+      {
+        "hangul": "쉬운",
+        "tipo": "adjetivo",
+        "significado_pt": "fácil"
+      },
+      {
+        "hangul": "자세한",
+        "tipo": "adjetivo",
+        "significado_pt": "detalhado"
+      }
+    ],
+    "temas": [
+      "Escola"
+    ],
+    "exemplos": [
+      {
+        "hangul": "선생님이 한국어를 가르쳐요.",
+        "traducao_pt": "O professor ensina coreano."
+      },
+      {
+        "hangul": "친구에게 영어를 가르쳤어요.",
+        "traducao_pt": "Ensinei inglês ao meu amigo."
+      },
+      {
+        "hangul": "춤을 가르쳐 주세요.",
+        "traducao_pt": "Por favor, me ensine a dança."
+      },
+      {
+        "hangul": "학생들을 친절하게 가르쳐요.",
+        "traducao_pt": "Ela ensina os alunos gentilmente."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "verbo_kr": "읽다",
+    "verbo_br": "ler",
+    "palavras_relacionadas": [
+      {
+        "hangul": "책",
+        "tipo": "substantivo",
+        "significado_pt": "livro"
+      },
+      {
+        "hangul": "신문",
+        "tipo": "substantivo",
+        "significado_pt": "jornal"
+      },
+      {
+        "hangul": "문장",
+        "tipo": "substantivo",
+        "significado_pt": "frase"
+      },
+      {
+        "hangul": "소설",
+        "tipo": "substantivo",
+        "significado_pt": "romance / novela"
+      },
+      {
+        "hangul": "만화",
+        "tipo": "substantivo",
+        "significado_pt": "mangá / quadrinho"
+      },
+      {
+        "hangul": "문자",
+        "tipo": "substantivo",
+        "significado_pt": "mensagem"
+      },
+      {
+        "hangul": "글자",
+        "tipo": "substantivo",
+        "significado_pt": "letra / caractere"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      },
+      {
+        "hangul": "긴",
+        "tipo": "adjetivo",
+        "significado_pt": "longo"
+      },
+      {
+        "hangul": "재미있는",
+        "tipo": "adjetivo",
+        "significado_pt": "interessante / divertido"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "K-pop & K-drama",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "책을 읽고 있어요.",
+        "traducao_pt": "Estou lendo um livro."
+      },
+      {
+        "hangul": "한국어 문장을 읽었어요.",
+        "traducao_pt": "Li frases em coreano."
+      },
+      {
+        "hangul": "재미있는 소설을 읽고 싶어요.",
+        "traducao_pt": "Quero ler um romance interessante."
+      },
+      {
+        "hangul": "메시지를 빨리 읽어 주세요.",
+        "traducao_pt": "Por favor, leia a mensagem rapidamente."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "verbo_kr": "쓰다",
+    "verbo_br": "escrever",
+    "palavras_relacionadas": [
+      {
+        "hangul": "글",
+        "tipo": "substantivo",
+        "significado_pt": "texto / escrita"
+      },
+      {
+        "hangul": "편지",
+        "tipo": "substantivo",
+        "significado_pt": "carta"
+      },
+      {
+        "hangul": "일기",
+        "tipo": "substantivo",
+        "significado_pt": "diário"
+      },
+      {
+        "hangul": "노트",
+        "tipo": "substantivo",
+        "significado_pt": "caderno"
+      },
+      {
+        "hangul": "펜",
+        "tipo": "substantivo",
+        "significado_pt": "caneta"
+      },
+      {
+        "hangul": "메모",
+        "tipo": "substantivo",
+        "significado_pt": "anotação"
+      },
+      {
+        "hangul": "숙제",
+        "tipo": "substantivo",
+        "significado_pt": "lição de casa"
+      },
+      {
+        "hangul": "깔끔한",
+        "tipo": "adjetivo",
+        "significado_pt": "organizado / limpo"
+      },
+      {
+        "hangul": "짧은",
+        "tipo": "adjetivo",
+        "significado_pt": "curto"
+      },
+      {
+        "hangul": "긴",
+        "tipo": "adjetivo",
+        "significado_pt": "longo"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "일기를 쓰고 있어요.",
+        "traducao_pt": "Estou escrevendo um diário."
+      },
+      {
+        "hangul": "노트에 메모를 썼어요.",
+        "traducao_pt": "Escrevi uma anotação no caderno."
+      },
+      {
+        "hangul": "친구에게 편지를 쓰고 싶어요.",
+        "traducao_pt": "Quero escrever uma carta para meu amigo."
+      },
+      {
+        "hangul": "숙제를 다 썼어요.",
+        "traducao_pt": "Terminei de escrever a lição de casa."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "verbo_kr": "공부하다",
+    "verbo_br": "estudar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "학교",
+        "tipo": "substantivo",
+        "significado_pt": "escola"
+      },
+      {
+        "hangul": "시험",
+        "tipo": "substantivo",
+        "significado_pt": "prova / exame"
+      },
+      {
+        "hangul": "숙제",
+        "tipo": "substantivo",
+        "significado_pt": "lição de casa"
+      },
+      {
+        "hangul": "도서관",
+        "tipo": "substantivo",
+        "significado_pt": "biblioteca"
+      },
+      {
+        "hangul": "학생",
+        "tipo": "substantivo",
+        "significado_pt": "estudante"
+      },
+      {
+        "hangul": "단어",
+        "tipo": "substantivo",
+        "significado_pt": "vocabulário"
+      },
+      {
+        "hangul": "문법",
+        "tipo": "substantivo",
+        "significado_pt": "gramática"
+      },
+      {
+        "hangul": "열심히",
+        "tipo": "advérbio",
+        "significado_pt": "diligentemente"
+      },
+      {
+        "hangul": "어려운",
+        "tipo": "adjetivo",
+        "significado_pt": "difícil"
+      },
+      {
+        "hangul": "중요한",
+        "tipo": "adjetivo",
+        "significado_pt": "importante"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "도서관에서 공부하고 있어요.",
+        "traducao_pt": "Estou estudando na biblioteca."
+      },
+      {
+        "hangul": "시험 때문에 열심히 공부했어요.",
+        "traducao_pt": "Estudei muito por causa da prova."
+      },
+      {
+        "hangul": "한국어 문법을 공부해요.",
+        "traducao_pt": "Estudo gramática coreana."
+      },
+      {
+        "hangul": "친구와 같이 공부하고 싶어요.",
+        "traducao_pt": "Quero estudar junto com meu amigo."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "verbo_kr": "일하다",
+    "verbo_br": "trabalhar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "회사",
+        "tipo": "substantivo",
+        "significado_pt": "empresa"
+      },
+      {
+        "hangul": "사무실",
+        "tipo": "substantivo",
+        "significado_pt": "escritório"
+      },
+      {
+        "hangul": "직원",
+        "tipo": "substantivo",
+        "significado_pt": "funcionário"
+      },
+      {
+        "hangul": "회의",
+        "tipo": "substantivo",
+        "significado_pt": "reunião"
+      },
+      {
+        "hangul": "월급",
+        "tipo": "substantivo",
+        "significado_pt": "salário"
+      },
+      {
+        "hangul": "컴퓨터",
+        "tipo": "substantivo",
+        "significado_pt": "computador"
+      },
+      {
+        "hangul": "프로젝트",
+        "tipo": "substantivo",
+        "significado_pt": "projeto"
+      },
+      {
+        "hangul": "바쁜",
+        "tipo": "adjetivo",
+        "significado_pt": "ocupado"
+      },
+      {
+        "hangul": "힘든",
+        "tipo": "adjetivo",
+        "significado_pt": "difícil / cansativo"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      }
+    ],
+    "temas": [
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "회사에서 일하고 있어요.",
+        "traducao_pt": "Estou trabalhando na empresa."
+      },
+      {
+        "hangul": "오늘 회의가 많아서 바빴어요.",
+        "traducao_pt": "Hoje fiquei ocupado porque havia muitas reuniões."
+      },
+      {
+        "hangul": "컴퓨터로 프로젝트를 하고 있어요.",
+        "traducao_pt": "Estou fazendo um projeto no computador."
+      },
+      {
+        "hangul": "주말에는 일하고 싶지 않아요.",
+        "traducao_pt": "Não quero trabalhar no fim de semana."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "verbo_kr": "쉬다",
+    "verbo_br": "descansar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "휴식",
+        "tipo": "substantivo",
+        "significado_pt": "descanso"
+      },
+      {
+        "hangul": "주말",
+        "tipo": "substantivo",
+        "significado_pt": "fim de semana"
+      },
+      {
+        "hangul": "집",
+        "tipo": "substantivo",
+        "significado_pt": "casa"
+      },
+      {
+        "hangul": "공원",
+        "tipo": "substantivo",
+        "significado_pt": "parque"
+      },
+      {
+        "hangul": "의자",
+        "tipo": "substantivo",
+        "significado_pt": "cadeira"
+      },
+      {
+        "hangul": "커피",
+        "tipo": "substantivo",
+        "significado_pt": "café"
+      },
+      {
+        "hangul": "피곤",
+        "tipo": "substantivo",
+        "significado_pt": "cansaço"
+      },
+      {
+        "hangul": "편안한",
+        "tipo": "adjetivo",
+        "significado_pt": "confortável"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      },
+      {
+        "hangul": "느린",
+        "tipo": "adjetivo",
+        "significado_pt": "lento"
+      }
+    ],
+    "temas": [
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "집에서 쉬고 있어요.",
+        "traducao_pt": "Estou descansando em casa."
+      },
+      {
+        "hangul": "너무 피곤해서 좀 쉬었어요.",
+        "traducao_pt": "Descansei um pouco porque estava muito cansado."
+      },
+      {
+        "hangul": "공원에서 쉬고 싶어요.",
+        "traducao_pt": "Quero descansar no parque."
+      },
+      {
+        "hangul": "주말에는 푹 쉬어요.",
+        "traducao_pt": "No fim de semana descanso bastante."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "verbo_kr": "걷다",
+    "verbo_br": "caminhar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "길",
+        "tipo": "substantivo",
+        "significado_pt": "rua / caminho"
+      },
+      {
+        "hangul": "공원",
+        "tipo": "substantivo",
+        "significado_pt": "parque"
+      },
+      {
+        "hangul": "산책",
+        "tipo": "substantivo",
+        "significado_pt": "passeio / caminhada"
+      },
+      {
+        "hangul": "신발",
+        "tipo": "substantivo",
+        "significado_pt": "sapato"
+      },
+      {
+        "hangul": "날씨",
+        "tipo": "substantivo",
+        "significado_pt": "clima"
+      },
+      {
+        "hangul": "강",
+        "tipo": "substantivo",
+        "significado_pt": "rio"
+      },
+      {
+        "hangul": "아침",
+        "tipo": "substantivo",
+        "significado_pt": "manhã"
+      },
+      {
+        "hangul": "천천히",
+        "tipo": "advérbio",
+        "significado_pt": "devagar"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      },
+      {
+        "hangul": "시원한",
+        "tipo": "adjetivo",
+        "significado_pt": "fresco"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Viagem"
+    ],
+    "exemplos": [
+      {
+        "hangul": "공원에서 걷고 있어요.",
+        "traducao_pt": "Estou caminhando no parque."
+      },
+      {
+        "hangul": "아침마다 산책을 걸어요.",
+        "traducao_pt": "Faço caminhada toda manhã."
+      },
+      {
+        "hangul": "날씨가 좋아서 많이 걸었어요.",
+        "traducao_pt": "Caminhei muito porque o clima estava bom."
+      },
+      {
+        "hangul": "강 옆을 천천히 걷고 싶어요.",
+        "traducao_pt": "Quero caminhar devagar ao lado do rio."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "verbo_kr": "뛰다",
+    "verbo_br": "correr",
+    "palavras_relacionadas": [
+      {
+        "hangul": "운동",
+        "tipo": "substantivo",
+        "significado_pt": "exercício"
+      },
+      {
+        "hangul": "공원",
+        "tipo": "substantivo",
+        "significado_pt": "parque"
+      },
+      {
+        "hangul": "신발",
+        "tipo": "substantivo",
+        "significado_pt": "sapato"
+      },
+      {
+        "hangul": "마라톤",
+        "tipo": "substantivo",
+        "significado_pt": "maratona"
+      },
+      {
+        "hangul": "경기",
+        "tipo": "substantivo",
+        "significado_pt": "competição / jogo"
+      },
+      {
+        "hangul": "땀",
+        "tipo": "substantivo",
+        "significado_pt": "suor"
+      },
+      {
+        "hangul": "속도",
+        "tipo": "substantivo",
+        "significado_pt": "velocidade"
+      },
+      {
+        "hangul": "빠른",
+        "tipo": "adjetivo",
+        "significado_pt": "rápido"
+      },
+      {
+        "hangul": "건강한",
+        "tipo": "adjetivo",
+        "significado_pt": "saudável"
+      },
+      {
+        "hangul": "힘든",
+        "tipo": "adjetivo",
+        "significado_pt": "difícil / cansativo"
+      }
+    ],
+    "temas": [
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "공원에서 뛰고 있어요.",
+        "traducao_pt": "Estou correndo no parque."
+      },
+      {
+        "hangul": "아침마다 운동장에서 뛰어요.",
+        "traducao_pt": "Corro na pista todas as manhãs."
+      },
+      {
+        "hangul": "너무 빨리 뛰었어요.",
+        "traducao_pt": "Corri rápido demais."
+      },
+      {
+        "hangul": "건강하려고 매일 뛰고 있어요.",
+        "traducao_pt": "Corro todos os dias para ser saudável."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "verbo_kr": "운전하다",
+    "verbo_br": "dirigir",
+    "palavras_relacionadas": [
+      {
+        "hangul": "자동차",
+        "tipo": "substantivo",
+        "significado_pt": "carro"
+      },
+      {
+        "hangul": "도로",
+        "tipo": "substantivo",
+        "significado_pt": "estrada"
+      },
+      {
+        "hangul": "운전면허",
+        "tipo": "substantivo",
+        "significado_pt": "carteira de motorista"
+      },
+      {
+        "hangul": "신호등",
+        "tipo": "substantivo",
+        "significado_pt": "semáforo"
+      },
+      {
+        "hangul": "주차장",
+        "tipo": "substantivo",
+        "significado_pt": "estacionamento"
+      },
+      {
+        "hangul": "택시",
+        "tipo": "substantivo",
+        "significado_pt": "táxi"
+      },
+      {
+        "hangul": "여행",
+        "tipo": "substantivo",
+        "significado_pt": "viagem"
+      },
+      {
+        "hangul": "빠른",
+        "tipo": "adjetivo",
+        "significado_pt": "rápido"
+      },
+      {
+        "hangul": "위험한",
+        "tipo": "adjetivo",
+        "significado_pt": "perigoso"
+      },
+      {
+        "hangul": "안전한",
+        "tipo": "adjetivo",
+        "significado_pt": "seguro"
+      }
+    ],
+    "temas": [
+      "Viagem",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "자동차를 운전하고 있어요.",
+        "traducao_pt": "Estou dirigindo um carro."
+      },
+      {
+        "hangul": "운전면허를 받았어요.",
+        "traducao_pt": "Recebi minha carteira de motorista."
+      },
+      {
+        "hangul": "여행할 때 직접 운전했어요.",
+        "traducao_pt": "Dirigi pessoalmente durante a viagem."
+      },
+      {
+        "hangul": "안전하게 운전하세요.",
+        "traducao_pt": "Dirija com segurança."
+      }
+    ]
+  }
+]
