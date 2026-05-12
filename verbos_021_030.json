@@ -1,0 +1,793 @@
+[
+  {
+    "id": 21,
+    "verbo_kr": "사다",
+    "verbo_br": "comprar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "가게",
+        "tipo": "substantivo",
+        "significado_pt": "loja"
+      },
+      {
+        "hangul": "시장",
+        "tipo": "substantivo",
+        "significado_pt": "mercado / feira"
+      },
+      {
+        "hangul": "돈",
+        "tipo": "substantivo",
+        "significado_pt": "dinheiro"
+      },
+      {
+        "hangul": "카드",
+        "tipo": "substantivo",
+        "significado_pt": "cartão"
+      },
+      {
+        "hangul": "옷",
+        "tipo": "substantivo",
+        "significado_pt": "roupa"
+      },
+      {
+        "hangul": "신발",
+        "tipo": "substantivo",
+        "significado_pt": "sapato"
+      },
+      {
+        "hangul": "선물",
+        "tipo": "substantivo",
+        "significado_pt": "presente"
+      },
+      {
+        "hangul": "비싼",
+        "tipo": "adjetivo",
+        "significado_pt": "caro"
+      },
+      {
+        "hangul": "싼",
+        "tipo": "adjetivo",
+        "significado_pt": "barato"
+      },
+      {
+        "hangul": "예쁜",
+        "tipo": "adjetivo",
+        "significado_pt": "bonito"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Viagem"
+    ],
+    "exemplos": [
+      {
+        "hangul": "시장에서 과일을 샀어요.",
+        "traducao_pt": "Comprei frutas no mercado."
+      },
+      {
+        "hangul": "새 신발을 사고 싶어요.",
+        "traducao_pt": "Quero comprar sapatos novos."
+      },
+      {
+        "hangul": "친구에게 선물을 샀어요.",
+        "traducao_pt": "Comprei um presente para meu amigo."
+      },
+      {
+        "hangul": "이 옷은 너무 비싸요.",
+        "traducao_pt": "Essa roupa é muito cara."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "verbo_kr": "팔다",
+    "verbo_br": "vender",
+    "palavras_relacionadas": [
+      {
+        "hangul": "가게",
+        "tipo": "substantivo",
+        "significado_pt": "loja"
+      },
+      {
+        "hangul": "물건",
+        "tipo": "substantivo",
+        "significado_pt": "produto / objeto"
+      },
+      {
+        "hangul": "시장",
+        "tipo": "substantivo",
+        "significado_pt": "mercado"
+      },
+      {
+        "hangul": "가격",
+        "tipo": "substantivo",
+        "significado_pt": "preço"
+      },
+      {
+        "hangul": "돈",
+        "tipo": "substantivo",
+        "significado_pt": "dinheiro"
+      },
+      {
+        "hangul": "손님",
+        "tipo": "substantivo",
+        "significado_pt": "cliente"
+      },
+      {
+        "hangul": "과일",
+        "tipo": "substantivo",
+        "significado_pt": "fruta"
+      },
+      {
+        "hangul": "싼",
+        "tipo": "adjetivo",
+        "significado_pt": "barato"
+      },
+      {
+        "hangul": "유명한",
+        "tipo": "adjetivo",
+        "significado_pt": "famoso"
+      },
+      {
+        "hangul": "친절한",
+        "tipo": "adjetivo",
+        "significado_pt": "gentil"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Viagem"
+    ],
+    "exemplos": [
+      {
+        "hangul": "시장에서 과일을 팔아요.",
+        "traducao_pt": "Vendo frutas no mercado."
+      },
+      {
+        "hangul": "이 가게는 옷을 팔아요.",
+        "traducao_pt": "Esta loja vende roupas."
+      },
+      {
+        "hangul": "친구가 중고차를 팔았어요.",
+        "traducao_pt": "Meu amigo vendeu um carro usado."
+      },
+      {
+        "hangul": "손님에게 물건을 팔고 있어요.",
+        "traducao_pt": "Estou vendendo produtos aos clientes."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "verbo_kr": "만들다",
+    "verbo_br": "fazer/criar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "음식",
+        "tipo": "substantivo",
+        "significado_pt": "comida"
+      },
+      {
+        "hangul": "요리",
+        "tipo": "substantivo",
+        "significado_pt": "culinária / prato"
+      },
+      {
+        "hangul": "게임",
+        "tipo": "substantivo",
+        "significado_pt": "jogo"
+      },
+      {
+        "hangul": "영상",
+        "tipo": "substantivo",
+        "significado_pt": "vídeo"
+      },
+      {
+        "hangul": "노래",
+        "tipo": "substantivo",
+        "significado_pt": "música / canção"
+      },
+      {
+        "hangul": "계획",
+        "tipo": "substantivo",
+        "significado_pt": "plano"
+      },
+      {
+        "hangul": "케이크",
+        "tipo": "substantivo",
+        "significado_pt": "bolo"
+      },
+      {
+        "hangul": "새로운",
+        "tipo": "adjetivo",
+        "significado_pt": "novo"
+      },
+      {
+        "hangul": "맛있는",
+        "tipo": "adjetivo",
+        "significado_pt": "delicioso"
+      },
+      {
+        "hangul": "창의적인",
+        "tipo": "adjetivo",
+        "significado_pt": "criativo"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "저녁으로 김밥을 만들었어요.",
+        "traducao_pt": "Fiz gimbap para o jantar."
+      },
+      {
+        "hangul": "친구와 게임을 만들고 있어요.",
+        "traducao_pt": "Estou criando um jogo com meu amigo."
+      },
+      {
+        "hangul": "생일 케이크를 만들고 싶어요.",
+        "traducao_pt": "Quero fazer um bolo de aniversário."
+      },
+      {
+        "hangul": "새로운 계획을 만들었어요.",
+        "traducao_pt": "Criei um novo plano."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "verbo_kr": "사용하다",
+    "verbo_br": "usar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "컴퓨터",
+        "tipo": "substantivo",
+        "significado_pt": "computador"
+      },
+      {
+        "hangul": "휴대폰",
+        "tipo": "substantivo",
+        "significado_pt": "celular"
+      },
+      {
+        "hangul": "앱",
+        "tipo": "substantivo",
+        "significado_pt": "aplicativo"
+      },
+      {
+        "hangul": "인터넷",
+        "tipo": "substantivo",
+        "significado_pt": "internet"
+      },
+      {
+        "hangul": "카드",
+        "tipo": "substantivo",
+        "significado_pt": "cartão"
+      },
+      {
+        "hangul": "비밀번호",
+        "tipo": "substantivo",
+        "significado_pt": "senha"
+      },
+      {
+        "hangul": "기계",
+        "tipo": "substantivo",
+        "significado_pt": "máquina"
+      },
+      {
+        "hangul": "편리한",
+        "tipo": "adjetivo",
+        "significado_pt": "conveniente"
+      },
+      {
+        "hangul": "새로운",
+        "tipo": "adjetivo",
+        "significado_pt": "novo"
+      },
+      {
+        "hangul": "복잡한",
+        "tipo": "adjetivo",
+        "significado_pt": "complicado"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "Escola"
+    ],
+    "exemplos": [
+      {
+        "hangul": "휴대폰을 자주 사용해요.",
+        "traducao_pt": "Uso o celular com frequência."
+      },
+      {
+        "hangul": "학교에서 컴퓨터를 사용했어요.",
+        "traducao_pt": "Usei o computador na escola."
+      },
+      {
+        "hangul": "이 앱을 사용해 보세요.",
+        "traducao_pt": "Experimente usar este aplicativo."
+      },
+      {
+        "hangul": "카드를 사용해서 계산했어요.",
+        "traducao_pt": "Paguei usando cartão."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "verbo_kr": "시작하다",
+    "verbo_br": "começar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "수업",
+        "tipo": "substantivo",
+        "significado_pt": "aula"
+      },
+      {
+        "hangul": "일",
+        "tipo": "substantivo",
+        "significado_pt": "trabalho / tarefa"
+      },
+      {
+        "hangul": "게임",
+        "tipo": "substantivo",
+        "significado_pt": "jogo"
+      },
+      {
+        "hangul": "영화",
+        "tipo": "substantivo",
+        "significado_pt": "filme"
+      },
+      {
+        "hangul": "공부",
+        "tipo": "substantivo",
+        "significado_pt": "estudo"
+      },
+      {
+        "hangul": "운동",
+        "tipo": "substantivo",
+        "significado_pt": "exercício"
+      },
+      {
+        "hangul": "프로젝트",
+        "tipo": "substantivo",
+        "significado_pt": "projeto"
+      },
+      {
+        "hangul": "새로운",
+        "tipo": "adjetivo",
+        "significado_pt": "novo"
+      },
+      {
+        "hangul": "빠른",
+        "tipo": "adjetivo",
+        "significado_pt": "rápido"
+      },
+      {
+        "hangul": "중요한",
+        "tipo": "adjetivo",
+        "significado_pt": "importante"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "수업이 시작했어요.",
+        "traducao_pt": "A aula começou."
+      },
+      {
+        "hangul": "새로운 프로젝트를 시작했어요.",
+        "traducao_pt": "Comecei um novo projeto."
+      },
+      {
+        "hangul": "오늘부터 운동을 시작할 거예요.",
+        "traducao_pt": "Vou começar a me exercitar a partir de hoje."
+      },
+      {
+        "hangul": "영화가 곧 시작해요.",
+        "traducao_pt": "O filme vai começar em breve."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "verbo_kr": "끝나다",
+    "verbo_br": "terminar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "수업",
+        "tipo": "substantivo",
+        "significado_pt": "aula"
+      },
+      {
+        "hangul": "시험",
+        "tipo": "substantivo",
+        "significado_pt": "prova"
+      },
+      {
+        "hangul": "영화",
+        "tipo": "substantivo",
+        "significado_pt": "filme"
+      },
+      {
+        "hangul": "회의",
+        "tipo": "substantivo",
+        "significado_pt": "reunião"
+      },
+      {
+        "hangul": "게임",
+        "tipo": "substantivo",
+        "significado_pt": "jogo"
+      },
+      {
+        "hangul": "방학",
+        "tipo": "substantivo",
+        "significado_pt": "férias"
+      },
+      {
+        "hangul": "시간",
+        "tipo": "substantivo",
+        "significado_pt": "tempo / horário"
+      },
+      {
+        "hangul": "긴",
+        "tipo": "adjetivo",
+        "significado_pt": "longo"
+      },
+      {
+        "hangul": "짧은",
+        "tipo": "adjetivo",
+        "significado_pt": "curto"
+      },
+      {
+        "hangul": "늦은",
+        "tipo": "adjetivo",
+        "significado_pt": "tarde"
+      }
+    ],
+    "temas": [
+      "Escola",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "수업이 끝났어요.",
+        "traducao_pt": "A aula terminou."
+      },
+      {
+        "hangul": "회의가 방금 끝났어요.",
+        "traducao_pt": "A reunião acabou agora."
+      },
+      {
+        "hangul": "영화가 너무 빨리 끝났어요.",
+        "traducao_pt": "O filme terminou muito rápido."
+      },
+      {
+        "hangul": "시험이 언제 끝나요?",
+        "traducao_pt": "Quando a prova termina?"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "verbo_kr": "기다리다",
+    "verbo_br": "esperar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "친구",
+        "tipo": "substantivo",
+        "significado_pt": "amigo"
+      },
+      {
+        "hangul": "버스",
+        "tipo": "substantivo",
+        "significado_pt": "ônibus"
+      },
+      {
+        "hangul": "지하철",
+        "tipo": "substantivo",
+        "significado_pt": "metrô"
+      },
+      {
+        "hangul": "공항",
+        "tipo": "substantivo",
+        "significado_pt": "aeroporto"
+      },
+      {
+        "hangul": "시간",
+        "tipo": "substantivo",
+        "significado_pt": "tempo"
+      },
+      {
+        "hangul": "순서",
+        "tipo": "substantivo",
+        "significado_pt": "fila / ordem"
+      },
+      {
+        "hangul": "손님",
+        "tipo": "substantivo",
+        "significado_pt": "cliente / visitante"
+      },
+      {
+        "hangul": "오래",
+        "tipo": "advérbio",
+        "significado_pt": "por muito tempo"
+      },
+      {
+        "hangul": "조용한",
+        "tipo": "adjetivo",
+        "significado_pt": "silencioso"
+      },
+      {
+        "hangul": "지루한",
+        "tipo": "adjetivo",
+        "significado_pt": "entediante"
+      }
+    ],
+    "temas": [
+      "Viagem",
+      "Dia a dia",
+      "Aeroporto"
+    ],
+    "exemplos": [
+      {
+        "hangul": "친구를 기다리고 있어요.",
+        "traducao_pt": "Estou esperando meu amigo."
+      },
+      {
+        "hangul": "버스를 오래 기다렸어요.",
+        "traducao_pt": "Esperei muito tempo pelo ônibus."
+      },
+      {
+        "hangul": "공항에서 가족을 기다렸어요.",
+        "traducao_pt": "Esperei minha família no aeroporto."
+      },
+      {
+        "hangul": "조금만 기다려 주세요.",
+        "traducao_pt": "Por favor, espere um pouco."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "verbo_kr": "만나다",
+    "verbo_br": "encontrar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "친구",
+        "tipo": "substantivo",
+        "significado_pt": "amigo"
+      },
+      {
+        "hangul": "가족",
+        "tipo": "substantivo",
+        "significado_pt": "família"
+      },
+      {
+        "hangul": "선생님",
+        "tipo": "substantivo",
+        "significado_pt": "professor"
+      },
+      {
+        "hangul": "회사",
+        "tipo": "substantivo",
+        "significado_pt": "empresa"
+      },
+      {
+        "hangul": "카페",
+        "tipo": "substantivo",
+        "significado_pt": "cafeteria"
+      },
+      {
+        "hangul": "약속",
+        "tipo": "substantivo",
+        "significado_pt": "compromisso"
+      },
+      {
+        "hangul": "데이트",
+        "tipo": "substantivo",
+        "significado_pt": "encontro"
+      },
+      {
+        "hangul": "반가운",
+        "tipo": "adjetivo",
+        "significado_pt": "agradável / bem-vindo"
+      },
+      {
+        "hangul": "유명한",
+        "tipo": "adjetivo",
+        "significado_pt": "famoso"
+      },
+      {
+        "hangul": "친절한",
+        "tipo": "adjetivo",
+        "significado_pt": "gentil"
+      }
+    ],
+    "temas": [
+      "Dia a dia",
+      "K-pop & K-drama"
+    ],
+    "exemplos": [
+      {
+        "hangul": "친구를 만나러 가요.",
+        "traducao_pt": "Vou encontrar meu amigo."
+      },
+      {
+        "hangul": "카페에서 만났어요.",
+        "traducao_pt": "Nos encontramos na cafeteria."
+      },
+      {
+        "hangul": "유명한 배우를 만나고 싶어요.",
+        "traducao_pt": "Quero conhecer um ator famoso."
+      },
+      {
+        "hangul": "내일 선생님을 만나요.",
+        "traducao_pt": "Vou encontrar o professor amanhã."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "verbo_kr": "사랑하다",
+    "verbo_br": "amar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "가족",
+        "tipo": "substantivo",
+        "significado_pt": "família"
+      },
+      {
+        "hangul": "친구",
+        "tipo": "substantivo",
+        "significado_pt": "amigo"
+      },
+      {
+        "hangul": "연인",
+        "tipo": "substantivo",
+        "significado_pt": "namorado(a)"
+      },
+      {
+        "hangul": "마음",
+        "tipo": "substantivo",
+        "significado_pt": "coração / sentimento"
+      },
+      {
+        "hangul": "행복",
+        "tipo": "substantivo",
+        "significado_pt": "felicidade"
+      },
+      {
+        "hangul": "고백",
+        "tipo": "substantivo",
+        "significado_pt": "declaração amorosa"
+      },
+      {
+        "hangul": "노래",
+        "tipo": "substantivo",
+        "significado_pt": "música"
+      },
+      {
+        "hangul": "따뜻한",
+        "tipo": "adjetivo",
+        "significado_pt": "caloroso"
+      },
+      {
+        "hangul": "진심인",
+        "tipo": "adjetivo",
+        "significado_pt": "sincero"
+      },
+      {
+        "hangul": "행복한",
+        "tipo": "adjetivo",
+        "significado_pt": "feliz"
+      }
+    ],
+    "temas": [
+      "K-pop & K-drama",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "가족을 정말 사랑해요.",
+        "traducao_pt": "Eu realmente amo minha família."
+      },
+      {
+        "hangul": "그 사람을 사랑하고 있어요.",
+        "traducao_pt": "Estou amando aquela pessoa."
+      },
+      {
+        "hangul": "사랑 노래를 자주 들어요.",
+        "traducao_pt": "Escuto músicas de amor com frequência."
+      },
+      {
+        "hangul": "행복하게 사랑하고 싶어요.",
+        "traducao_pt": "Quero amar de forma feliz."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "verbo_kr": "좋아하다",
+    "verbo_br": "gostar",
+    "palavras_relacionadas": [
+      {
+        "hangul": "음식",
+        "tipo": "substantivo",
+        "significado_pt": "comida"
+      },
+      {
+        "hangul": "음악",
+        "tipo": "substantivo",
+        "significado_pt": "música"
+      },
+      {
+        "hangul": "영화",
+        "tipo": "substantivo",
+        "significado_pt": "filme"
+      },
+      {
+        "hangul": "아이돌",
+        "tipo": "substantivo",
+        "significado_pt": "idol"
+      },
+      {
+        "hangul": "동물",
+        "tipo": "substantivo",
+        "significado_pt": "animal"
+      },
+      {
+        "hangul": "색깔",
+        "tipo": "substantivo",
+        "significado_pt": "cor"
+      },
+      {
+        "hangul": "취미",
+        "tipo": "substantivo",
+        "significado_pt": "hobby"
+      },
+      {
+        "hangul": "귀여운",
+        "tipo": "adjetivo",
+        "significado_pt": "fofo"
+      },
+      {
+        "hangul": "재미있는",
+        "tipo": "adjetivo",
+        "significado_pt": "divertido"
+      },
+      {
+        "hangul": "유명한",
+        "tipo": "adjetivo",
+        "significado_pt": "famoso"
+      }
+    ],
+    "temas": [
+      "K-pop & K-drama",
+      "Dia a dia"
+    ],
+    "exemplos": [
+      {
+        "hangul": "저는 음악을 좋아해요.",
+        "traducao_pt": "Eu gosto de música."
+      },
+      {
+        "hangul": "귀여운 강아지를 좋아해요.",
+        "traducao_pt": "Gosto de cachorros fofos."
+      },
+      {
+        "hangul": "어떤 아이돌을 좋아하세요?",
+        "traducao_pt": "De qual idol você gosta?"
+      },
+      {
+        "hangul": "매운 음식을 좋아하지 않아요.",
+        "traducao_pt": "Não gosto de comida apimentada."
+      }
+    ]
+  }
+]
