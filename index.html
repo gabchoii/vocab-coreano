@@ -452,10 +452,7 @@ async function saveName() {
   localStorage.setItem('vocab_user_name', val.split(' ')[0]);
   localStorage.setItem('vocab_user_icon', _selectedIcon);
   document.getElementById('name-modal').style.display = 'none';
-  var existing = await _sb.from('ranking').select('user_id').eq('user_id', getUserId()).single();
-  if (existing.data) {
-    await _sb.from('ranking').update({ initials: val.split(' ')[0], icon: _selectedIcon }).eq('user_id', getUserId());
-  }
+  await _sb.from('ranking').update({ initials: val.split(' ')[0], icon: _selectedIcon }).eq('user_id', getUserId());
   if (document.getElementById('page-history').classList.contains('active')) renderProfile();
 }
 
