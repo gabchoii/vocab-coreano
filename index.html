@@ -713,7 +713,10 @@ function showPage(name) {
 // ── HISTORY ──
 function getHistory(){ try{ return JSON.parse(localStorage.getItem('korean_history')||'[]'); }catch(e){ return []; } }
 function saveToHistory(entry){
-  var h = getHistory(); h.unshift(entry);
+  var h = getHistory();
+  var today = entry.date.substring(0,10);
+  if (h.length && h[0].date.substring(0,10) === today) return;
+  h.unshift(entry);
   if(h.length>60) h.splice(60);
   localStorage.setItem('korean_history', JSON.stringify(h));
 }
