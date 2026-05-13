@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -302,6 +302,9 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
         <button class="btn-refresh" id="btn-refresh" onclick="forceRefresh()" title="Forçar atualização">↻</button>
       </div>
     </div>
+    <div style="margin-bottom:1rem">
+      <button onclick="showPage('history')" id="btn-ver-anteriores" style="background:var(--pink2);border:1.5px solid var(--pink);border-radius:20px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;color:var(--navy2);cursor:pointer;padding:6px 16px">estudar verbos anteriores</button>
+    </div>
     <div id="home-content">
       <div class="state-box">
         <div class="spinner"></div>
@@ -359,6 +362,9 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
     <div class="page-header">
       <h1 id="ranking-page-title">🏆 <em>Ranking</em></h1>
       <p id="ranking-page-sub" style="display:none"></p>
+    </div>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:0.75rem">
+      <button class="btn-refresh" onclick="loadRanking()" title="Atualizar ranking">↻</button>
     </div>
     <div id="ranking-content"><div class="ranking-empty">Carregando...</div></div>
   </div>
@@ -440,12 +446,17 @@ function selectIcon(el, val) {
   _selectedIcon = val;
 }
 
-function saveName() {
+async function saveName() {
   var val = document.getElementById('name-input').value.trim();
   if (!val) return;
   localStorage.setItem('vocab_user_name', val.split(' ')[0]);
   localStorage.setItem('vocab_user_icon', _selectedIcon);
   document.getElementById('name-modal').style.display = 'none';
+  var existing = await _sb.from('ranking').select('user_id').eq('user_id', getUserId()).single();
+  if (existing.data) {
+    await _sb.from('ranking').update({ initials: val.split(' ')[0], icon: _selectedIcon }).eq('user_id', getUserId());
+  }
+  if (document.getElementById('page-history').classList.contains('active')) renderProfile();
 }
 
 function checkName() {
@@ -649,6 +660,7 @@ function setLang(lang) {
   document.getElementById('history-page-title2').innerHTML  = isKo ? '<em>공부</em> 기록'                  : 'Histórico de <em>estudos</em>';
   document.getElementById('history-page-sub').textContent   = isKo ? '공부한 모든 동사'                    : 'Todos os verbos que você já estudou.';
   document.getElementById('profile-edit-btn').textContent   = isKo ? '✏️ 편집'                             : '✏️ Editar';
+  document.getElementById('btn-ver-anteriores').textContent = isKo ? '이전 동사 공부하기'                  : 'estudar verbos anteriores';
   document.getElementById('streak-pre').textContent        = isKo ? '단어 공부 '                           : 'estudando vocabulário há ';
   document.getElementById('streak-suf').textContent        = isKo ? '일째'                                 : ' dias';
   if (currentWords) renderWords(currentWords);
@@ -898,6 +910,7 @@ function renderQuizResult() {
     '<h2>'+msg+'</h2><p>'+pct+'% de acerto</p>'+
     '<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">'+
     '<button class="btn-primary" onclick="startQuiz()">↻ Tentar de novo</button>'+
+    '<button class="btn-secondary" onclick="showPage(\'ranking\')">🏆 Ver ranking</button>'+
     '<button class="btn-secondary" onclick="showPage(\'home\')">Voltar ao início</button>'+
     '</div></div>';
 }
