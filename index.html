@@ -439,7 +439,7 @@ function checkName() {
 
 function saveDailyScore(score) {
   var scores = JSON.parse(localStorage.getItem('vocab_daily_scores') || '[]');
-  var today = new Date().toISOString().substring(0,10);
+  var today = todayLocal();
   var existing = scores.find(function(s){ return s.date === today; });
   if (existing) { if (score > existing.score) existing.score = score; }
   else { scores.push({date: today, score: score}); }
@@ -450,7 +450,7 @@ function getStreakDays() {
   var h = getHistory();
   if (!h.length) return [];
   var studied = Array.from(new Set(h.map(function(e){ return e.date.substring(0,10); }))).sort().reverse();
-  var today = new Date(); today.setHours(0,0,0,0);
+  var today = todayBRT();
   var result = [], check = new Date(today);
   for (var i = 0; i < studied.length; i++) {
     var d = new Date(studied[i] + 'T00:00:00');
@@ -660,7 +660,7 @@ async function generateWords() {
     });
     currentWords = verbs;
     saveCache(verbs);
-    saveToHistory({date: new Date().toISOString(), verbs: currentWords.map(function(v){return {hangul:v.hangul,meaning_pt:v.meaning_pt,related:v.related};})});
+    saveToHistory({date: todayLocal(), verbs: currentWords.map(function(v){return {hangul:v.hangul,meaning_pt:v.meaning_pt,related:v.related};})});
     renderWords(currentWords);
   } catch(e) {
     document.getElementById('home-content').innerHTML = '<div class="state-box"><span style="color:var(--accent)">Erro ao carregar. Tente novamente.</span><button class="btn-primary" style="margin-top:12px" onclick="generateWords()">Tentar de novo</button></div>';
@@ -712,9 +712,22 @@ function showPage(name) {
 
 // ── HISTORY ──
 function getHistory(){ try{ return JSON.parse(localStorage.getItem('korean_history')||'[]'); }catch(e){ return []; } }
+function todayLocal() {
+  var d = new Date();
+  var utc = d.getTime() + d.getTimezoneOffset() * 60000;
+  var brt = new Date(utc - 3 * 3600000);
+  return brt.getFullYear() + '-' + String(brt.getMonth()+1).padStart(2,'0') + '-' + String(brt.getDate()).padStart(2,'0');
+}
+function todayBRT() {
+  var d = new Date();
+  var utc = d.getTime() + d.getTimezoneOffset() * 60000;
+  var brt = new Date(utc - 3 * 3600000);
+  brt.setHours(0, 0, 0, 0);
+  return brt;
+}
 function saveToHistory(entry){
   var h = getHistory();
-  var today = entry.date.substring(0,10);
+  var today = todayLocal();
   if (h.length && h[0].date.substring(0,10) === today) return;
   h.unshift(entry);
   if(h.length>60) h.splice(60);
@@ -862,8 +875,7 @@ function getStreakCount() {
   var h = getHistory();
   if (!h.length) return 1;
   var days = Array.from(new Set(h.map(function(e){ return e.date.substring(0,10); }))).sort().reverse();
-  var today = new Date();
-  today.setHours(0,0,0,0);
+  var today = todayBRT();
   var streak = 0;
   var check = new Date(today);
   for (var i = 0; i < days.length; i++) {
