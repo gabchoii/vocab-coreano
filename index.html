@@ -529,6 +529,7 @@ async function loadRanking() {
     .select('initials,best_score,streak,icon')
     .order('best_score', { ascending: false })
     .order('streak', { ascending: false })
+    .order('updated_at', { ascending: true })
     .limit(20);
   if (error || !data || !data.length) {
     document.getElementById('ranking-content').innerHTML = '<div class="ranking-empty">Nenhum resultado ainda. Complete um quiz para aparecer aqui!</div>';
@@ -752,7 +753,7 @@ async function renderProfile() {
     if (res.data) {
       var score = res.data.best_score || 0;
       var streak = res.data.streak || 0;
-      var allRes = await _sb.from('ranking').select('user_id,best_score').order('best_score', {ascending: false});
+      var allRes = await _sb.from('ranking').select('user_id,best_score,streak,updated_at').order('best_score', {ascending: false}).order('streak', {ascending: false}).order('updated_at', {ascending: true});
       var pos = (allRes.data || []).findIndex(function(r){ return r.user_id === userId; }) + 1;
       row.innerHTML =
         '<span class="ranking-score">' + score + ' pts</span>' +
