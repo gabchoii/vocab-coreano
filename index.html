@@ -490,7 +490,7 @@ async function saveScoreToRanking(score) {
     icon: getUserIcon(),
     best_score: streakScore,
     streak: streak,
-    updated_at: new Date().toISOString()
+    updated_at: new Date().toLocaleString('sv-SE', {timeZone:'America/Sao_Paulo'}).replace(' ','T') + '-03:00'
   }, { onConflict: 'user_id' });
 }
 
