@@ -173,6 +173,13 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
 .ranking-pos{font-size:20px;font-weight:800;color:var(--ink3);width:28px;text-align:center;flex-shrink:0}
 .ranking-pos.gold{color:#f5a623}.ranking-pos.silver{color:#9b9b9b}.ranking-pos.bronze{color:#b87333}
 .ranking-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;background:var(--pink2);flex-shrink:0;border:2px solid var(--pink)}
+.profile-card{background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:1.5rem;display:flex;align-items:center;gap:1.5rem}
+.profile-avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0}
+.ranking-avatar-large{width:80px;height:80px;font-size:38px}
+.profile-edit-btn{background:none;border:1px solid var(--border);border-radius:20px;font-size:12px;font-family:'Nunito',sans-serif;font-weight:700;color:var(--ink3);cursor:pointer;padding:3px 10px}
+.profile-edit-btn:hover{border-color:var(--navy2);color:var(--navy)}
+.profile-greeting{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:6px}
+.profile-ranking-row{font-size:14px;font-weight:600;color:var(--ink3);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .ranking-avatar-emoji{display:flex;align-items:center;justify-content:center;font-size:26px}
 .ranking-name{flex:1;font-size:16px;font-weight:700;color:var(--ink)}
 .ranking-score{font-size:13px;font-weight:700;color:var(--navy2);background:var(--pink2);padding:3px 10px;border-radius:20px}
@@ -275,7 +282,7 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
     <div class="nav-tabs">
       <button class="nav-tab active" id="tab-home" onclick="showPage('home')">Hoje</button>
       <button class="nav-tab" id="tab-quiz" onclick="showPage('quiz')">Quiz</button>
-      <button class="nav-tab" id="tab-history" onclick="showPage('history')">Histórico</button>
+      <button class="nav-tab" id="tab-history" onclick="showPage('history')">Perfil</button>
       <button class="nav-tab" id="tab-ranking" onclick="showPage('ranking')">Ranking</button>
     </div>
     <div class="nav-lang">
@@ -327,7 +334,20 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
 <div id="page-history" class="page">
   <div class="container">
     <div class="page-header">
-      <h1 id="history-page-title">Histórico de <em>estudos</em></h1>
+      <h1 id="history-page-title">Perfil</h1>
+    </div>
+    <div class="profile-card">
+      <div class="profile-avatar-wrap">
+        <div id="profile-avatar-display"></div>
+        <button class="profile-edit-btn" onclick="openEditProfile()" id="profile-edit-btn">✏️ Editar</button>
+      </div>
+      <div class="profile-info">
+        <div class="profile-greeting" id="profile-greeting">Oi!</div>
+        <div class="profile-ranking-row" id="profile-ranking-row"></div>
+      </div>
+    </div>
+    <div class="page-header" style="margin-top:2rem">
+      <h2 id="history-page-title2">Histórico de <em>estudos</em></h2>
       <p id="history-page-sub">Todos os verbos que você já estudou.</p>
     </div>
     <div id="history-content"></div>
@@ -364,7 +384,7 @@ nav{background:var(--navy);display:flex;align-items:center;padding:0 0 0 1.5rem;
   <nav class="drawer-nav">
     <button class="drawer-item active" id="drawer-home" data-page="home" onclick="showPage('home')">Hoje</button>
     <button class="drawer-item" id="drawer-quiz" data-page="quiz" onclick="showPage('quiz')">Quiz</button>
-    <button class="drawer-item" id="drawer-history" data-page="history" onclick="showPage('history')">Histórico</button>
+    <button class="drawer-item" id="drawer-history" data-page="history" onclick="showPage('history')">Perfil</button>
     <button class="drawer-item" id="drawer-ranking" data-page="ranking" onclick="showPage('ranking')">Ranking</button>
   </nav>
   <div class="drawer-divider"></div>
@@ -494,12 +514,13 @@ async function saveScoreToRanking(score) {
   }, { onConflict: 'user_id' });
 }
 
-function renderAvatar(icon) {
+function renderAvatar(icon, large) {
   if (!icon) icon = 'user-icon/1.png';
+  var cls = 'ranking-avatar' + (large ? ' ranking-avatar-large' : '');
   if (icon.startsWith('user-icon/')) {
-    return '<img class="ranking-avatar" src="' + icon + '" alt="avatar">';
+    return '<img class="' + cls + '" src="' + icon + '" alt="avatar">';
   }
-  return '<div class="ranking-avatar ranking-avatar-emoji">' + icon + '</div>';
+  return '<div class="' + cls + ' ranking-avatar-emoji">' + icon + '</div>';
 }
 
 async function loadRanking() {
@@ -610,11 +631,11 @@ function setLang(lang) {
   document.getElementById('nav-desc').textContent          = isKo ? '매일 동사 두개와 관련 단어'           : 'Todos os dias, dois verbos e palavras relacionadas';
   document.getElementById('tab-home').textContent          = isKo ? '오늘'                                 : 'Hoje';
   document.getElementById('tab-quiz').textContent          = isKo ? '퀴즈'                                 : 'Quiz';
-  document.getElementById('tab-history').textContent       = isKo ? '기록'                                 : 'Histórico';
+  document.getElementById('tab-history').textContent       = isKo ? '프로필'                               : 'Perfil';
   document.getElementById('tab-ranking').textContent       = isKo ? '랭킹'                                 : 'Ranking';
   document.getElementById('drawer-home').textContent       = isKo ? '오늘'                                 : 'Hoje';
   document.getElementById('drawer-quiz').textContent       = isKo ? '퀴즈'                                 : 'Quiz';
-  document.getElementById('drawer-history').textContent    = isKo ? '기록'                                 : 'Histórico';
+  document.getElementById('drawer-history').textContent    = isKo ? '프로필'                               : 'Perfil';
   document.getElementById('drawer-ranking').textContent    = isKo ? '랭킹'                                 : 'Ranking';
   document.getElementById('ranking-page-title').innerHTML  = isKo ? '🏆 <em>랭킹</em>'                     : '🏆 <em>Ranking</em>';
   document.getElementById('ranking-page-sub').textContent  = isKo ? '퀴즈 최고 점수'                       : 'Melhores pontuações do quiz';
@@ -623,8 +644,10 @@ function setLang(lang) {
   document.getElementById('quiz-ready-title').textContent  = isKo ? '준비됐나요?'                          : 'Pronto para testar?';
   document.getElementById('quiz-ready-sub').textContent    = isKo ? '먼저 오늘의 단어를 불러온 후 퀴즈를 시작하세요.' : 'Gere o vocabulário do dia primeiro, depois volte aqui para o quiz.';
   document.getElementById('quiz-start-btn').textContent    = isKo ? '퀴즈 시작 →'                         : 'Iniciar quiz →';
-  document.getElementById('history-page-title').innerHTML  = isKo ? '<em>공부</em> 기록'                   : 'Histórico de <em>estudos</em>';
-  document.getElementById('history-page-sub').textContent  = isKo ? '공부한 모든 동사'                     : 'Todos os verbos que você já estudou.';
+  document.getElementById('history-page-title').textContent = isKo ? '프로필'                              : 'Perfil';
+  document.getElementById('history-page-title2').innerHTML  = isKo ? '<em>공부</em> 기록'                  : 'Histórico de <em>estudos</em>';
+  document.getElementById('history-page-sub').textContent   = isKo ? '공부한 모든 동사'                    : 'Todos os verbos que você já estudou.';
+  document.getElementById('profile-edit-btn').textContent   = isKo ? '✏️ 편집'                             : '✏️ Editar';
   document.getElementById('streak-pre').textContent        = isKo ? '단어 공부 '                           : 'estudando vocabulário há ';
   document.getElementById('streak-suf').textContent        = isKo ? '일째'                                 : ' dias';
   if (currentWords) renderWords(currentWords);
@@ -710,9 +733,46 @@ function showPage(name) {
   document.querySelectorAll('.drawer-item').forEach(function(item) {
     item.classList.toggle('active', item.dataset.page === name);
   });
-  if (name === 'history') renderHistory();
+  if (name === 'history') { renderProfile(); renderHistory(); }
   if (name === 'ranking') loadRanking();
   closeMobileMenu();
+}
+
+// ── PROFILE ──
+async function renderProfile() {
+  var name = getUserName() || '?';
+  var icon = getUserIcon();
+  document.getElementById('profile-greeting').textContent = 'Oi, ' + name + '!';
+  document.getElementById('profile-avatar-display').innerHTML = renderAvatar(icon, true);
+  var row = document.getElementById('profile-ranking-row');
+  row.innerHTML = '<span>Carregando ranking…</span>';
+  try {
+    var userId = getUserId();
+    var res = await _sb.from('ranking').select('best_score,streak').eq('user_id', userId).single();
+    if (res.data) {
+      var score = res.data.best_score || 0;
+      var streak = res.data.streak || 0;
+      var allRes = await _sb.from('ranking').select('user_id,best_score').order('best_score', {ascending: false});
+      var pos = (allRes.data || []).findIndex(function(r){ return r.user_id === userId; }) + 1;
+      row.innerHTML =
+        '<span class="ranking-score">' + score + ' pts</span>' +
+        '<span class="ranking-streak">🔥 ' + streak + ' ' + (currentLang === 'ko' ? '일' : (streak === 1 ? 'dia' : 'dias')) + '</span>' +
+        (pos > 0 ? '<span style="color:var(--ink3)">• #' + pos + 'º no ranking</span>' : '');
+    } else {
+      row.innerHTML = '<span style="color:var(--ink3)">Faça o quiz para aparecer no ranking.</span>';
+    }
+  } catch(e) {
+    row.innerHTML = '<span style="color:var(--ink3)">—</span>';
+  }
+}
+
+function openEditProfile() {
+  _selectedIcon = getUserIcon();
+  buildIconGrid();
+  var nameInput = document.getElementById('name-input');
+  nameInput.value = getUserName() || '';
+  document.getElementById('name-modal').style.display = 'flex';
+  setTimeout(function(){ nameInput.focus(); }, 100);
 }
 
 // ── HISTORY ──
