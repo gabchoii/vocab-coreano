@@ -680,18 +680,28 @@ async function generateWords() {
       batch++;
     }
     if (all.length === 0) throw new Error('nenhum arquivo encontrado');
-    // Selecao deterministica por data: mesmos verbos para todos no mesmo dia
-    var EPOCH = new Date('2025-01-01T00:00:00');
-    var today = todayBRT();
-    var dayNumber = Math.floor((today - EPOCH) / 86400000);
-    var globalRng = seededRng(hashStr('vocab-global-v1'));
-    var sorted = all.slice().sort(function(a,b){ return a.id - b.id; });
-    for (var si = sorted.length - 1; si > 0; si--) {
-      var sj = Math.floor(globalRng() * (si + 1));
-      var tmp = sorted[si]; sorted[si] = sorted[sj]; sorted[sj] = tmp;
+    // Selecao por ID via Supabase: mesmos verbos para todos no mesmo dia, sem repeticao
+    var today = todayLocal();
+    var picked;
+    var scheduled = await _sb.from('verb_schedule').select('verb_id_1,verb_id_2').eq('date', today).maybeSingle();
+    if (scheduled.data) {
+      picked = [all.find(function(v){ return v.id === scheduled.data.verb_id_1; }),
+               all.find(function(v){ return v.id === scheduled.data.verb_id_2; })];
+    } else {
+      var usedRes = await _sb.from('verb_schedule').select('verb_id_1,verb_id_2');
+      var usedIds = new Set();
+      (usedRes.data || []).forEach(function(r){ usedIds.add(r.verb_id_1); usedIds.add(r.verb_id_2); });
+      var globalRng = seededRng(hashStr('vocab-global-v1'));
+      var sorted = all.slice().sort(function(a,b){ return a.id - b.id; });
+      for (var si = sorted.length - 1; si > 0; si--) {
+        var sj = Math.floor(globalRng() * (si + 1));
+        var tmp = sorted[si]; sorted[si] = sorted[sj]; sorted[sj] = tmp;
+      }
+      var unused = sorted.filter(function(v){ return !usedIds.has(v.id); });
+      if (unused.length < 2) unused = sorted; // reinicia ciclo quando esgotar
+      picked = [unused[0], unused[1]];
+      await _sb.from('verb_schedule').insert({ date: today, verb_id_1: picked[0].id, verb_id_2: picked[1].id });
     }
-    var idx = (dayNumber * 2) % sorted.length;
-    var picked = [sorted[idx], sorted[(idx + 1) % sorted.length]];
     var verbs = picked.map(function(v) {
       return {
         hangul: v.verbo_kr,
