@@ -685,9 +685,13 @@ async function generateWords() {
     var today = todayBRT();
     var dayNumber = Math.floor((today - EPOCH) / 86400000);
     var globalRng = seededRng(hashStr('vocab-global-v1'));
-    var order = all.slice().sort(function(){ return globalRng() - 0.5; });
-    var idx = (dayNumber * 2) % order.length;
-    var picked = [order[idx], order[(idx + 1) % order.length]];
+    var sorted = all.slice().sort(function(a,b){ return a.id - b.id; });
+    for (var si = sorted.length - 1; si > 0; si--) {
+      var sj = Math.floor(globalRng() * (si + 1));
+      var tmp = sorted[si]; sorted[si] = sorted[sj]; sorted[sj] = tmp;
+    }
+    var idx = (dayNumber * 2) % sorted.length;
+    var picked = [sorted[idx], sorted[(idx + 1) % sorted.length]];
     var verbs = picked.map(function(v) {
       return {
         hangul: v.verbo_kr,
